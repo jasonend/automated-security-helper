@@ -9,7 +9,7 @@ ARG BASE_IMAGE=public.ecr.aws/bitnami/python:3.10
 # the current BASE_IMAGE supports while we identify a solution
 # for supporting arm64 as well.
 #
-FROM --platform=linux/amd64 ${BASE_IMAGE}
+FROM ${BASE_IMAGE}
 
 #
 # Setting timezone in the container to UTC to ensure logged times are universal.
